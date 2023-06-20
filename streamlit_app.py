@@ -1,17 +1,37 @@
 import streamlit as st
 from streamlit_chat import message
-import requests
+import openai
+from qa import QA
+import tempfile
+import os
+
+temp_path = None
+qa = None
+
+openai.api_key = st.secrets["OPENAI_API_KEY"]
+
 
 st.set_page_config(
-    page_title="Streamlit Chat - Demo",
+    page_title="CS Automation chatbot",
     page_icon=":robot:"
 )
 
-# API_URL = "https://api-inference.huggingface.co/models/facebook/blenderbot-400M-distill"
-# headers = {"Authorization": st.secrets['api_key']}
+st.header("CS Automation chatbot")
 
-st.header("Streamlit Chat - Demo")
-st.markdown("[Github](https://github.com/ai-yash/st-chat)")
+# Add content to the sidebar
+st.sidebar.title("Add your CSV macro file")
+
+# Add a file uploader field in the sidebar
+uploaded_file = st.sidebar.file_uploader("Upload CSV", type="csv")
+
+# Process the uploaded file if it exists
+if uploaded_file is not None:
+    # Save the uploaded file to a temporary location
+    temp_dir = tempfile.TemporaryDirectory()
+    temp_path = os.path.join(temp_dir.name, uploaded_file.name)
+    with open(temp_path, "wb") as f:
+        f.write(uploaded_file.getbuffer())
+    qa = QA(file_path=temp_path)
 
 if 'generated' not in st.session_state:
     st.session_state['generated'] = []
@@ -19,9 +39,7 @@ if 'generated' not in st.session_state:
 if 'past' not in st.session_state:
     st.session_state['past'] = []
 
-def query(payload):
-	response = requests.post(API_URL, headers=headers, json=payload)
-	return response.json()
+
 
 def get_text():
     input_text = st.text_input("You: ","Hello, how are you?", key="input")
@@ -31,7 +49,10 @@ def get_text():
 user_input = get_text()
 
 if user_input:
-    output = "hi"
+    if qa is None:
+        output = "Please load a CSV file first"
+    else:
+        output = qa.run_query(user_input)['result']
 
     st.session_state.past.append(user_input)
     st.session_state.generated.append(output)
