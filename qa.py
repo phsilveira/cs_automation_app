@@ -8,7 +8,7 @@ from langchain.chains import ConversationalRetrievalChain
 
 class QA:
     template = """To Answer the question, always thank the user for the contact first, 
-    answer in your own words and in a very FUNNY way and as truthfully as possible from the context given to you.
+    answer in your own words and in a very polite way and as truthfully as possible from the context given to you.
     If you do not know the answer to the question, simply respond with "I don't know. Can you ask another question".
     If questions are asked where there is no relevant context available, simply respond with "I don't know. Please can you rephrase it?"
     Alweys in the end of the answer suggest the user visit http://www.chatrandom.com/help for more information

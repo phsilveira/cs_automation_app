@@ -1,0 +1,195 @@
+rowid,question,answer,type,classification
+21,LEGITIMATE SUSPENSION,Our admins looked into your account and ban ID and this is a legitimate suspension. You were blocked for violating our Acceptable Use Policy which is stated on the site as well as in the terms. You can wait until the suspension expires if you were not banned permanently. Please note that further violations will result in a suspension again,mail,suspension
+22,Active VIP subscription,Our admins checked your account and we are not seeing any issues with your account,"mail""",subscription
+23,account was deleted,,"mail""",account management
+24,TOKEN,We do not offer token purchases at this time. If you have any further questions please let us know by replying to this message.,"mail""",payment
+25,INSTRUCTIONS TO CANCEL MEMBERSHIP,For security reasons,"mail""",account management
+26,Subscription has been cancelled,Your current subscription has been cancelled and you will not be billed anymore.,mail,subscription
+27,Reactivate membership reply,"Your subscription has been cancelled and cannot be reactivated. Please upgrade your membership again to have access to all chat features. """,mail,subscription
+28,forgot password reply,Please use the “Forgot Password” link in the “Login” area to reset your password.,mail,account management
+29,provide purchase ID,Please provide the purchase ID and our admins will look into this.,"mail""",payment
+30,Fraudulent Chargebacks/refunds,We have checked these purchases and they are all valid and there is no refund due. Should you file a dispute regarding these valid charges we will forward supporting documentation to law enforcement as proof that you made these charges from your IP and device. Please be aware that you are exposing yourself to possible criminal prosecution if law enforcement does find that you did actually make these charges and committed credit card fraud. This is a very serious offense and we hope that you appreciate the gravity of your actions on this matter.,"mail""",payment
+31,no active VIP subscription,You currently do not have an active VIP subscription. Please upgrade your membership to have access to all chat features.,"mail""",subscription
+32,send screenshot of error,Thank you for your email and for bringing this to our attention. Could you please let me know what specific issues you've encountered or send us a screenshot of the error you are seeing if there is still one so that our admins can investigate this.,"mail""",technical support
+33,no refund due,"Your current subscription has been cancelled and you will not be billed anymore. Our admins looked into your account and there is no refund due. As stated in our terms: Payments are nonrefundable and there are no refunds or credits for partially used periods.""",mail,payment
+34,we recommend to change password for security,you should be able to have access to your account now. For your security we recommend you change your password if you feel someone else may have been using your account.,"mail""",account management
+35,Unban lifted,Your ban has been lifted and you should now have access to the chat. Please review our Acceptable Use Policy to avoid getting future bans.,mail,suspension
+36,no refund due,Please note that further violations may result in a permanent suspension.,"mail""",suspension
+37,Refund has been issued,We’re sorry to hear you’re not happy with the service. We’ve processed your refund request.,"mail""",payment
+38,Tech Support - Looking into the Issue,Thank you for your email. We are currently having our technical support team check on this issue and we will get back to you as soon as we have an update.,mail,technical support
+39,Filter Issue,"Our admins checked your account and we are not seeing any issues with your account. Please send us a screenshot of the error you are seeing if there is still one so that our admins can investigate this. """,mail,technical support
+40,Check with Bank,"Our admins checked your account and we are not seeing any issues. In order to upgrade your membership you will need to do it again. If the charge is still declined, please contact your bank. ",mail,payment
+41,Permanent Ban,Our admins looked into your account and ban ID and this is a legitimate suspension. You were blocked for violating our Acceptable Use Policy which is clearly stated on the site as well as in the terms.,mail,suspension
+42,Deletion and GDPR Request,"In order to ensure that the sender of this request is the account holder we request that the account holder login to their account and delete their account in the ""My Account"" section. To delete your account please navigate to the ""My Account"" area and choose ""delete my account"". If you have any further questions please let us know.",mail,account management
+43,Legitimate Ban,"Our admins looked into your account and ban ID and this is a legitimate suspension. You were blocked for violating our Acceptable Use Policy which is clearly stated on the site as well as in the terms. Please note that further violations may result in an account suspension or permanent account restriction.""",mail,suspension
+44,Provide Ban ID,Please provide the Ban ID and our admins will look into this.,mail,suspension
+49,account suspended and refund issued to credit card.,Suspected fraudulent account. This account has been suspended and a refund has been issued to your credit card.,ban,fraud
+52,Swipe Feature,The beauty of [brand] lies in its simplicity. You (user) can connect to a partner via video chat in just a couple of clicks. You (user) also have the option to make a new connection just by clicking on the “Next” button and you will connect with a new partner.,mail,feature
+53,VIP Account Deleted,,,account management
+54,full text fraud ban,Suspected fraudulent activity and high risk score. This account has been suspended and a refund has been issued to your credit card.,ban,fraud
+55,Did not receive email in signing up,Kindly check your spam e-mail box or try to re-sign up with the correct details.,mail,account management
+56,we work with law enforcement,We work with law enforcement and would be happy to assist you with any questions you have. Please forward us your questions via our contact form and we will forward them to the appropriate person and get them answered for you as soon as possible.,"mail""",legal
+59,Change Username / Email Add,"To change your email please log into your ""My Account"" area and click on ""change email address"". If you have any further questions please let us know.",mail,account management
+62,Updated: Check Bank,Our admins checked your account and we are not seeing any issues. In order to upgrade your membership you will need to do it again as the charge did not go through on our end. If charge is still declined,,payment
+64,Facebook Account ,Kindly log out of all your devices and try logging in using your Facebook account. ,,payment
+68,data retention/subpoena response,Thank you very much for your email. Any subpoena that we receive is immediately forwarded to our attorney for handling. We cannot give you legal advice as to what should or should not be included in a subpoena.,"mail""",legal
+70,bounty award,We pay from $100 - $500 for discoveries of vulnerabilities depending on the severity. Please reply using the contact form on the website,"mail""",security
+96,bounty thank you email,Thank you for finding these security vulnerabilities. We really appreciate you helping us on this. We would like to send you a bounty. Our dev team looked into this and concluded that this is not a serious threat and therefore the bounty is $100. Please provide your PayPal address for the payment. If you find any other vulnerabilities in the future please report them and we will reward you based on the severity.,"mail""",security
+116,Legit Charge But Customer Insists on Refund,We can refund your last [#] charges but would have to refer this as fraud which means it will be investigated and you will not be able to use this site or many other sites that use SegPay as a processor ever again. Please confirm that these are actually fraudulent transactions and then we will take the appropriate action.,mail,payment
+118,Gender Banned,You have been banned for violating our acceptable use policy,,policy
+120,UnderAge Banned,You have been banned for being underage,,policy
+128,cp full text vip,Your account has been banned for illegal activity forever. Your subscription has also been canceled.,ban,illegal activity
+150,Cant log into account,Thank you for contacting us. We would love to help you solve the problem you’re having. Have you tried resetting your password? Most of the time that should resolve the problem. ,"livehelp""",technical support
+192,Your account has been deleted,Your account has been deleted and your data has been added to the deletion que.,"mail""",account management
+196,Is there anything else I may help you with?,Is there anything else I may help you with?,livehelp,greeting
+198,Scenario: user wants to reactivate subscription,I looked into your account and see your subscription has been cancelled and unfortunately we are not able to reactivate it. Please upgrade your membership again to have access to all chat features.,livehelp,subscription
+200,Scenario: user cant login or forgot password,Please use the “Forgot Password” link in the “Login” area to reset your password.,livehelp,account management
+202,Please give me a moment to look into this.,Please give me a moment to look into this.,livehelp,technical support
+204,User is having a tech issue and tech support has to look into it,We will need to have our Technical Support Team check on this issue and we will get back to you via email as soon as we have an update.,livehelp,technical support
+206,Delete Account,"In order to ensure that the sender of this request is the account holder we request that the account holder login to their account and delete their account in the ""My Account"" section. To delete your account please navigate to the ""My Account"" area and choose ""delete my account"". If you have any further questions please let us know.",livehelp,account management
+208,Provide Ban ID,Please provide the Ban ID and I will look into this.,livehelp,suspension
+210,scenario: user wants to change account email,"To change your email please navigate to the ""My Account"" area and click on ""change email address"". If you have any further questions please let us know.",livehelp,account management
+214,scenario: legit charge but customer insists on refund,We would have to refer this as fraud which means it will be investigated and you will not be able to use this site or many other sites that use the same processor. Please confirm that these are actually fraudulent transactions and you would like us to proceed with referring this for investigation.,livehelp,payment
+216,User was banned for underage,You have been banned for being underage,"livehelp""",policy
+220,Unban was lifted,Your ban has been lifted and you should now have access to the chat. Please review our Acceptable Use Policy to avoid getting future bans.,"livehelp""",suspension
+224,Greetings 2,Thank you for reaching out to us!,livehelp,greeting
+226,Upset with Issue,I understand. Kindly wait for the update from our technical team as I will escalate this immediately.,livehelp,technical support
+228,No Refund Due,Our admins looked into your account and there is no refund due. As stated in our terms: Payments are nonrefundable and there are no refunds or credits for partially used periods. Your current subscription has been cancelled and you will not be billed anymore.,livehelp,payment
+230,Safe Search Setting,Apologies but at this time we are not offering a safe search setting.,,policy
+232,Gender Filter,If you would like to chat with a specific gender only you can use the gender filter on the chat.,livehelp,technical support
+234,Refund Request - open an internal investigation,"Our admins have checked your account and we see that your Join date was [date]
+We also see that your last login was [date]
+What we can do is open an internal investigation and if we do find fraudulent activity related to your account we will issue you a refund and refer the case to law enforcement for investigation. Please confirm that you are not the account holder",,fraud
+236,Refund request for non-use,As clearly stated on the payment page you signed up to a membership that rebills weekly. We do not offer refunds for non-use as stated in our terms. As a courtesy we will refund your last charge and cancel your membership so you do not get billed again.,mail,payment
+238,Subscription Explained,It is auto-charged as it is a subscription and the amount and billing period depends on the plan you have picked,,subscription
+242,Can't Hear Other People Complaint,"This can happen for various reasons:
+1. Your sound settings may need adjustment.  You can do a sound test here: https://www.onlinemictest.com/sound-test/
+2. The other person has their mic disabled.
+If you still encounter issues with sound we can escalate this to our tech team.""",livehelp,subscription
+244,Webcam Issues,"This can happen for various reasons:
+1. Your denied permission for webcam on our site
+2. Your webcam is not working with browser. For this please do a webcam test to find the issue: https://www.onlinemictest.com/webcam-test/
+If you still encounter issues with your webcam we can escalate this to our tech team.""",livehelp,technical support
+246,How to change the Auto Message Settings,To change this setting please navigate to the settings icon and you will be able to adjust your intro message setting there. ,livehelp,technical support
+248,Keeps disconnecting/being Nexted,Each connection continues until one of the chat partners clicks the next button. To have longer conversations make sure to show your face and be in a well lighted room. ,,technical support
+252,Back Button Feature,The way the back button feature works is it can only be used once per connection.,livehelp,technical support
+254,General Settings Change,To change this setting please navigate to the settings icon and you will be able to adjust it there. ,livehelp,feature
+260,Legitimate Banned,Our admins looked into your account and ban ID and this is a legitimate suspension. You were blocked for violating our Acceptable Use Policy which is clearly stated on the site as well as in the terms. You can review the said policy on our website. Please note that further violations may result in an account suspension or permanent account restriction. ,livehelp,account management
+262,Account Is Active,Our admins checked your account and we are not seeing any issues with your account,,suspension
+264,Change payment method (Check if they pay via Segpay),Please navigate to our processors consumer portal here: https://cs.segpay.com/,livehelp,account management
+268,Gender/Vulgar Banned,You have been banned for violating our acceptable use policy,,payment
+278,User wants to Cancel Membership from another website (do not address the site),You would need to go to the other website and cancel from there,,subscription
+280,Subsciption is Cancelled,Your current subscription has been cancelled and you will not be billed anymore. ,livehelp,account management
+282,Billing Support Escalation,We will need to have our Billing Support Team check on this issue and we will get back to you via email as soon as we have an update. ,livehelp,subscription
+284,Provide Purchase ID,Please provide the purchase ID and our admins will look into this. ,livehelp,payment
+286,Restart Browser,"Our admins checked your account and we are not seeing any issues with your account
+ please let us know and we will escalate to our Technical team."";","""livehelp""",account management
+288,Why Asking for a Refund,May I ask why do you want a refund please?,livehelp,technical support
+290,Pricing,"For information about pricing and our pricing plans please press the ""upgrade"" button in the menu to see all plans available.",livehelp,account management
+294,Google Play Account Cancellation,Our admins checked your account and it shows you signed up through Google Play. Kindly cancel your subscription through Google. Here are the instructions: https://support.google.com/googleplay/answer/7018481?co=GENIE.Platform%3DAndroid&hl=en,"livehelp""",feature
+296,What is the Error Showing: (Please edit as what applies to the issue),Can you explain more if you are seeing an error of what happens when you try to disable please? ,"livehelp""",account management
+300,General Settings Change,To change this setting please navigate to the settings icon and you will be able to adjust it there. ,"mail""",technical support
+304,iTunes Account Cancellation:,Our admins checked your account and it shows you signed up through iTunes. Kindly cancel your subscription through your settings. Here are the instructions: https://support.apple.com/en-us/HT202039,"livehelp""",account management
+306,State Filter:,Apologies but there is no way to adjust someone's state. We currently only offer country selection in the chat.  ,livehelp,account management
+308,Can't Cancel ; No Cancellation Button,"Here are the instructions to easily cancel your membership. 
+To cancel your membership please log into your account area. Then under your membership status click the “Details” button and then the “Cancel Membership” button.
+","livehelp""",technical support
+310,What is the name of your other website for adults that don't mind nudity,We are not able to recommend any other sites. We apologize for the inconvenience. ,livehelp,account management
+312, How to turn on and off translator,To change this setting please navigate to the settings icon and you will be able to adjust it there.,livehelp,account management
+314,No girls complaint:,Usually this problem occurs when filters are selected.  Please try removing interest tags and country filters and try again,,technical support
+316,What are these likes for?,Likes are used as a way to show popularity on the chat,,technical support
+318,Nobody appear on cam I click start and the hearth is flashing but nothing happen:,I will have to escalate this to our tech team to see why this is happening. Thank you for reporting this bug,,feature
+320,Delay while loading profiles/Sometimes the site crashes in the browser:,I will have to escalate this to our tech team to see why this is happening. Thank you for reporting this,,technical support
+322,I paid and it’s not popping up any girls just men:,Usually this problem occurs when filters are selected.  Please try removing interest tags and country filters and try again,,technical support
+324,Some users threaten to spread my data (Extortion),We advise users to never give out their personal information when talking to strangers online.  We are not able to do anything on our end as we do not have partner logs of who you connected with.,livehelp,technical support
+326,For how long are the materials(personal and sensitive data) saved on your website?:,For this information if you can please refer to our privacy policy it has all the information regarding personal data collection and storage.,"livehelp""",security
+330,Swipe Feature,The beauty of [brand] lies in its simplicity. You can connect to a partner via video chat in just a couple of clicks. You also have the option to make a new connection just by clicking on the “Next” button and you will connect with a new partner.,livehelp,account management
+332,How can I use the private chat function? ,"You can use ""start private chat"" button to start a private chat. ",livehelp,feature
+334,Users complaining/reporting IA or Nudity,We do not tolerate any illegal activity on our platform and promptly ban any reported users that violate our AUP and report such cases to law enforcement. We ask our users to help us by reporting such instances so we can promptly remove and ban such users from our platform. ,livehelp,feature
+336,Want/Can't connect to a Specific Country,If a country is not showing that means there are not enough users online at the moment to connect with in that country.,livehelp,illegal activity
+338,Webcam Issues: ,"This can happen for various reasons:
+1. You denied permission to your webcam on our site
+2. Your webcam is not working with the  browser. For this please do a webcam test to find the issue: https://www.onlinemictest.com/webcam-test/
+
+If you still encounter issues with your webcam we can escalate this to our tech team.","mail""",technical support
+340,Restart Browser,Our admins checked your account and we are not seeing any issues with your account,"mail""",technical support
+342,Male User Pretending Female Complaint,Please flag any user that you encounter that is setting themselves as female when they're not. We greatly appreciate you reporting this.,livehelp,technical support
+344,spam ban links,You have been banned for [#] days for spamming.  Please stop spamming url links or you will be permanently banned.,ban,fraud
+350,Retention of Ban Records,Ban logs which include user information obtained at the time of ban such as text messages or user images are kept for 30 days,,feature
+352,Users Asking if the will get Banned on Public ,We cannot advise users on personal actions. Please refer to our acceptable use policy for details.,livehelp,policy
+354,Can't Hear Other People Complaint,"This can happen for various reasons:
+1. Your sound settings may need adjustment.  You can do a sound test here: https://www.onlinemictest.com/sound-test/
+2. The other person has their mic disabled.
+If you still encounter issues with sound we can escalate this to our tech team.","mail""",policy
+356,Gender Filter,If you would like to connect with a specific gender please use the gender filter option. ,mail,technical support
+358,Google Play Account Cancellation,Our admins checked your account and it shows you signed up through Google Play. Kindly cancel your subscription through Google. Here are the instructions: https://support.google.com/googleplay/answer/7018481?co=GENIE.Platform%3DAndroid&hl=en,mail,feature
+360,Data Retention,Our data policies are clearly outlined in our privacy policy (link in footer of site) and define what is retained and for how long. I am not able to provide any additional information beyond our published policies.,mail,account management
+362,Male User Pretending Female Complaint,Please flag any user that you encounter that is setting themselves as female when they're not. We greatly appreciate you reporting this.,mail,policy
+366,Extortion reports,"Can you please give us more information so we can investigate:
+1. What country was user in
+
+2. What was gender? (male
+
+3. Did they say anything specific?
+
+4. Did they use text chat when talking to you?
+
+5. What time/date did this happen?
+
+Please respond to these questions and we will do our best to track down this user and report them to law enforcement for prosecution if we are able to locate them with the information you provide.""",mail,technical support
+372,Complaint about underage - users must be over 18 ,[Brand] is a site that is intended for adults only,,policy
+374,Users complaining/reporting IA or Nudity,We do not tolerate any Illegal Activity,,policy
+378,Web (Segpay) Cancellation,When you fill out the cancelation form an email is sent to the billing email on file.  Since you did not receive this email I will provide you with the link to our payment processor: https://cs.segpay.com/,,illegal activity
+380,IOS Cancellation,"After you fill out the cancelation form, please follow the instructions to complete cancelation. ",,account management
+384,Chatrandom Android Cancellation,"After you fill out the cancelation form, please follow the instructions to complete cancelation. ",,account management
+400,Illegal Activity,Illegal activity on our site is actively reported to law enforcement and we work with law enforcement to help them find and prosecute users engaged in illegal activity. ,ban,policy
+402,Keeps disconnecting/being Nexted: ,Each connection continues until one of the chat partners clicks the next button. To have longer conversations make sure to show your face and be in a well lighted room. ,,illegal activity
+410,Payment Methods,"Thank you for reaching out to us! We accept payments using other Major Credit Cards such as Visa, Mastercard, Discover and JCB. We also accept Google Play. 
+
+",,feature
+412,Referral Tokens,Thanks for reaching out to us! To claim your referral tokens please click on the Gift Icon and you will be able to claim your bonus tokens there. Once claimed they will be added to your token balance. Enjoy!,,payment
+416,User reporting UnderAge/Exploitation,Thank you for reporting this. We will investigate your report and take the appropriate action. We take these incidents very seriously and appreciate your report.,mail,feature
+418,how we process GDPR data access requests - answer,"Hello [name]:
+
+We write to acknowledge receipt of your email dated [date] regarding our process for responding to GDRP data access requests. At this time, we process GDPR data access requests via email.
+
+The GDPR requires us to respond to data subject requests within one month of receipt. However, in certain circumstances, the GDPR or other applicable law allows us to extend that deadline by two months depending on the complexity of your request. However, we must verify your identity before we can respond to your data access request. You must provide identification that clearly shows your name, date of birth, and current address. We accept a photocopy or a scanned image of the following as proof of identity: passport or photo identification such as a driver’s license, national identification card, or birth or adoption certification. If you have changed your name, you must provide relevant documents evidencing the change. We only use the identification documentation provided by you to respond to your request and not for any other purpose. We will delete or destroy all identification after confirmation of your identity.
+
+Our initial response letter to you may advise you that:
+
+•        We require more information to verify your identity.
+•        We need more information to respond to the request.
+•        We require you to pay a fee before we respond to the request.
+
+If we cannot honor the request, we will inform you of the reasons why, subject to any legal or regulatory restrictions.
+
+Specifically, as to your last question, in response to a data subject access request, we will, unless an exemption applies under the GDPR, provide you with the following information about our personal data processing activities:
+
+(a) The purpose of processing.
+(b) Categories of personal data processed.
+(c) Recipients or categories of recipients who receive personal data from us.
+(d) How long we store the personal data, or the criteria we use to determine retention periods.
+(e) Information on the personal data’s source if we do not collect it directly from the data subject.
+(f) Information on the safeguards we use to secure transfers of personal data to non-EU countries or to an international organization.
+(g) Whether we use automated decision-making, including profiling, the auto-decision logic used, and the consequences of this processing.
+(h) Their right to:
+                (i) request correction or erasure of their personal data;
+                (ii) restrict or object to certain types of processing with respect to their personal data; and
+                (iii) make a complaint with the local data protection authority.
+
+Please note that most of the above information is already set out at [https://chatrandom.com/privacy/]
+
+We will unless an exemption under the GDPR applies, provide you with a copy of the personal data we process about you in a commonly used electronic form.
+
+If you have any further questions, please do not hesitate to contact us.","mail""",account management
+420,For flings go to Flingster,Please avoid showing nudity or pointing at privates,"mail""",legal
+422,crypto Cancellation,"There is nothing to cancel since the membership does not renew automatically when paying with crypto. 
+When the term of your membership expires you can renew it manually by upgrading again. We currently do not offer subscriptions for crypto payments. ",mail,policy
+424,crypto Cancellation,"There is nothing to cancel since the membership does not renew automatically when paying with crypto. 
+When the term of your membership expires you can renew it manually by upgrading again. We currently do not offer subscriptions for crypto payments. ",livehelp,account management
+430,What do we do about illegal activity on the site?,We take illegal activity on the site very seriously and we ban users immediately when we discover such activity.  We do work with law enforcement and NCMEC (National Center for Missing and Exploited Children) to report incidents of child exploitation and abuse.,mail,account management
+432,Hate messages,Hate messages directed towards any group will not be tolerated and as a result your account has been banned permanently.,ban,policy
+434,CP complaint,We immediately ban users once we find any illegal activity in their video stream. We also report illegal incidents involving children to NCMEC and law enforcement regularly. ,,account management
+436,wants a refund and cancel,We are not able to locate your account with the email provided.  You can cancel your account easily by logging into your account,,policy
+440,Segpay email negative list email,I have looked into the issue and it looks like Segpay (our payment processor) has added your email to a negative email list.  This happens if there is a risk issue Segpay finds.,,payment
+442,Wrong ban,We looked into your account and have unbanned this account and all related accounts.  We apologize for the inconvenience and appreciate all the information to help us solve your issue!,mail,payment
