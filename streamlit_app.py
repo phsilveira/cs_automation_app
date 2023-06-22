@@ -52,7 +52,7 @@ if user_input:
     if qa is None:
         output = "Please load a CSV file first"
     else:
-        output = qa.run_query(user_input)['result']
+        output = qa.run_query(user_input)['answer']
 
     st.session_state.past.append(user_input)
     st.session_state.generated.append(output)
