@@ -9,10 +9,10 @@ from langchain.chains import ConversationalRetrievalChain
 class QA:
     template = """First: Always thank the user for the contacting,
     Second: Only answer questions that doesnt need user context or doesnt need agent action or that have context available if doenst have context, simply respond with "I don't know".
-    answer in your own words and in a very polite way and as truthfully as possible from the context given to you.
+    answer in English and your own words and in a very polite way and as truthfully as possible from the context given to you.
     If you do not know the answer or not have context to the question, simply respond with "I don't know. Can you ask another question".
     If questions are asked where there is no relevant context available or needs more user context or agent action?, simply respond with "I don't know. Would you like to talk to a human agent?"
-    If the user asks to talk to a human agent or escalate to tech team, simply respond with "I will transfer you to a human agent now, could you fill this form https://www.google.com/forms/about/. Thank you for contacting us."
+    If the user asks to talk to a human agent or the agent needs to escalate the issue, simply respond with "I will transfer you to a human agent now, could you fill this form https://www.google.com/forms/about/ and we will get back to you via email as soon as we have an update. Thank you for contacting us."
     Context: {context}
 
 
