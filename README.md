@@ -1,25 +1,33 @@
-# CS Automation App
+# CS Automation App (Streamlit and Gradio)
 
-Streamlit App for cs automation using CSV macro as input
+Streamlit and Gradio App for cs automation using CSV macro as input
 
 Built with ❤️ by [phsilveira](https://github.com/phsilveira)
 
-## What's this?
+## Local Gradio Setup Using Docker
+```sh
+# External users: download Files
+git clone git@github.com:phsilveira/cs_automation_app.git
 
-- `README.md`: This Document! To help you find your way around
-- `streamlit_app.py`: The main app that gets run by [`streamlit`](https://docs.streamlit.io/)
-- `requirements.txt`: Pins the version of packages needed
-- `LICENSE`: Follows Streamlit's use of Apache 2.0 Open Source License
-- `.gitignore`: Tells git to avoid comitting / scanning certain local-specific files
-- `.streamlit/config.toml`: Customizes the behaviour of streamlit without specifying command line arguments (`streamlit config show`)
-- `Makefile`: Provides useful commands for working on the project such as `run`, `lint`, `test`, and `test-e2e`
-- `requirements.dev.txt`: Provides packages useful for development but not necessarily production deployment. Also includes all of `requirements.txt` via `-r`
-- `pyproject.toml`: Provides a main configuration point for Python dev tools
-- `.flake8`: Because `flake8` doesn't play nicely with `pyproject.toml` out of the box
-- `.pre-commit-config.yaml`: Provides safeguards for what you commit and push to your repo
-- `tests/`: Folder for tests to be picked up by `pytest`
+# Go to correct directory
+cd cs_automation_appq
 
-## Local Setup
+# setup .env file
+cp .env.example .env
+
+# Start the docker container and build the image
+docker-compose up -d --build
+```
+
+## CURL Request
+```sh
+curl 'http://0.0.0.0:8000/run/predict' \
+  -H 'content-type: application/json' \
+  --data-raw $'{"data":["ok",[["hi","I\'m sorry, but I\'m not sure what you mean. Could you please provide more information so I can help you?"]]],"event_data":null,"fn_index":1,"session_hash":"6b5waetyyl"}' \
+  --compressed
+```
+
+## Local Streamlit Setup
 
 Assumes working python installation and some command line knowledge ([install python with conda guide](https://tech.gerardbentley.com/python/beginner/2022/01/29/install-python.html)).
 
@@ -28,7 +36,7 @@ Assumes working python installation and some command line knowledge ([install py
 git clone git@github.com:phsilveira/cs_automation_app.git
 
 # Go to correct directory
-cd cs_automation_app
+cd cs_automation_appq
 
 # Run the streamlit app (will install dependencies in a virtualenvironment in the folder venv)
 make run
@@ -55,9 +63,26 @@ make coverage
 ```
 ## Deploy
 
-For the easiest experience, deploy to [Streamlit Cloud](https://streamlit.io/cloud)
+I recommend use docker-compose to deploy this app. You can use the docker-compose.yml file in this repo as a template.
+  
+```sh
+docker-compose up -d --build
+```
 
-For other options, see [Streamilt deployment wiki](https://discuss.streamlit.io/t/streamlit-deployment-guide-wiki/5099)
+## What's this?
+
+- `README.md`: This Document! To help you find your way around
+- `streamlit_app.py`: The main app that gets run by [`streamlit`](https://docs.streamlit.io/)
+- `requirements.txt`: Pins the version of packages needed
+- `LICENSE`: Follows Streamlit's use of Apache 2.0 Open Source License
+- `.gitignore`: Tells git to avoid comitting / scanning certain local-specific files
+- `.streamlit/config.toml`: Customizes the behaviour of streamlit without specifying command line arguments (`streamlit config show`)
+- `Makefile`: Provides useful commands for working on the project such as `run`, `lint`, `test`, and `test-e2e`
+- `requirements.dev.txt`: Provides packages useful for development but not necessarily production deployment. Also includes all of `requirements.txt` via `-r`
+- `pyproject.toml`: Provides a main configuration point for Python dev tools
+- `.flake8`: Because `flake8` doesn't play nicely with `pyproject.toml` out of the box
+- `.pre-commit-config.yaml`: Provides safeguards for what you commit and push to your repo
+- `tests/`: Folder for tests to be picked up by `pytest`
 
 ## Credits
 
