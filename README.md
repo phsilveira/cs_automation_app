@@ -23,9 +23,80 @@ docker-compose up -d --build
 ```sh
 curl 'http://0.0.0.0:8000/run/predict' \
   -H 'content-type: application/json' \
-  --data-raw $'{"data":["ok",[["hi","I\'m sorry, but I\'m not sure what you mean. Could you please provide more information so I can help you?"]]],"event_data":null,"fn_index":1,"session_hash":"6b5waetyyl"}' \
+  --data-raw $'{"data":["hi",[]],"fn_index":1,"session_hash":"6b5waetyyl"}' \
   --compressed
 ```
+
+
+## API Documentation
+
+### Endpoint: `/run/predict`
+
+#### Request
+
+- Method: POST
+- URL: `http://0.0.0.0:8000/run/predict`
+- Headers:
+  - Content-Type: application/json
+
+##### Request Body
+
+```json
+{
+  "data": [
+    "hi",
+    []
+  ],
+  "fn_index": 1,
+  "session_hash": "6b5waetyyl"
+}
+```
+
+- `data` (Array):
+  - The first element is the input message (String).
+  - The second element is an array of history messages (Array of Arrays of Strings).
+
+- `fn_index` (Integer):
+  - Index of a specific function (Integer).
+
+- `session_hash` (String):
+  - Hash value representing the session (String).
+
+#### Response
+
+- Content-Type: application/json
+
+##### Response Body
+
+```json
+{
+  "data": [
+    "",
+    [
+      ["hi", "Hi there, how can I help you?"]
+    ]
+  ],
+  "is_generating": false,
+  "duration": 3.4465811252593994,
+  "average_duration": 3.4465811252593994
+}
+```
+
+- `data` (Array):
+  - The first element is the input message (String).
+  - The second element is an array of history messages (Array of Arrays of Strings).
+
+- `is_generating` (Boolean):
+  - Indicates whether the response is being generated (Boolean).
+
+- `duration` (Float):
+  - The time taken to generate the response in seconds (Float).
+
+- `average_duration` (Float):
+  - The average time taken to generate the response in seconds (Float).
+
+Please refer to the API documentation for more detailed information about the endpoint and its functionality.
+
 
 ## Local Streamlit Setup
 
