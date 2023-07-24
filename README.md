@@ -15,6 +15,9 @@ cd cs_automation_appq
 # setup .env file
 cp .env.example .env
 
+# append the token in the .env file
+echo "$(openssl rand -hex 32)" >> .env
+
 # Start the docker container and build the image
 docker-compose up -d --build
 ```
@@ -23,6 +26,7 @@ docker-compose up -d --build
 ```sh
 curl 'http://0.0.0.0:8000/run/predict' \
   -H 'content-type: application/json' \
+  -H 'Authorization: Bearer TOKEN' \
   --data-raw $'{"data":["hi",[]],"fn_index":1,"session_hash":"6b5waetyyl"}' \
   --compressed
 ```
@@ -37,7 +41,9 @@ curl 'http://0.0.0.0:8000/run/predict' \
 - Method: POST
 - URL: `http://0.0.0.0:8000/run/predict`
 - Headers:
-  - Content-Type: application/json
+  - Content-Type: application/json.
+  - Authorization: Bearer TOKEN - Provides authentication using a bearer token. Replace TOKEN with the actual token value within the .env file.
+
 
 ##### Request Body
 
