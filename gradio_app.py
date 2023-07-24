@@ -1,8 +1,10 @@
+from fastapi.responses import JSONResponse
 import gradio as gr
-from fastapi import FastAPI
-import uvicorn
 from qa import QA
+import uvicorn
+from fastapi import FastAPI, Header, HTTPException, status
 import os
+
 
 with gr.Blocks() as demo:
     chatbot = gr.Chatbot()
@@ -22,8 +24,19 @@ with gr.Blocks() as demo:
         outputs=[msg, chatbot],
     )
 
+
 app = FastAPI()
 gradio_app = gr.routes.App.create_app(demo)
 gradio_app.blocks.config["dev_mode"] = False
+
+@app.middleware("http")
+async def authenticate(request, call_next):
+    auth_header = request.headers.get("Authorization")
+    if auth_header != f"Bearer {os.environ.get('TOKEN')}":
+        response = await call_next(request)
+        return JSONResponse(content='Invalid authentication token', status_code=status.HTTP_401_UNAUTHORIZED)
+    response = await call_next(request)
+    return response
+
 app.mount("/", gradio_app)
-uvicorn.run(app, host="0.0.0.0", port=os.environ["API_PORT"])
+uvicorn.run(app, host="0.0.0.0", port=os.environ.get('API_PORT', 8000))
