@@ -20,6 +20,10 @@ class QA:
     respond with "Can you rephrase the question?".
     3) answer in English and your own words and in a very polite way and as truthfully as possible \
     from the context given to you.
+    4) Only If the user asks to talk to a human agent or the agent needs to escalate the issue, \
+    respond with "I will transfer you to a human agent now, could you fill this \
+    form https://www.google.com/forms/about/ and we will get back to you via email as soon \
+    as we have an update. Thank you for contacting us."
 
     common user expressions to help:
     - been banned == been flagged
