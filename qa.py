@@ -8,7 +8,7 @@ from langchain.chains.question_answering import load_qa_chain
 import openai
 import os
 
-openai.api_key = os.environ["OPENAI_API_KEY"]
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
 
 class QA:
@@ -20,10 +20,9 @@ class QA:
     respond with "Can you rephrase the question?".
     3) answer in English and your own words and in a very polite way and as truthfully as possible \
     from the context given to you.
-    4) Only If the user asks to talk to a human agent or the agent needs to escalate the issue, \
-    respond with "I will transfer you to a human agent now, could you fill this \
-    form https://www.google.com/forms/about/ and we will get back to you via email as soon \
-    as we have an update. Thank you for contacting us."
+    4) If and only if the user asks EXPLICITLY to talk to a human agent, \
+    respond with "[Click here](#escalate) to escalate to an agent" otherwise don't share this response
+    5) Don't make follow up questions to the user like: "If you need any further assistance", be very direct in the answers
 
     common user expressions to help:
     - been banned == been flagged
@@ -32,6 +31,10 @@ class QA:
     ```
     {context}
     ```
+
+    Example:
+    Human: Agent
+    AI: [Click here](#escalate) to escalate to an agent
 
     {chat_history}
     Human: {question}
