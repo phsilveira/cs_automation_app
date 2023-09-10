@@ -1,46 +1,46 @@
-id,question,answer,classification
-200,User cant login or forgot password,Please use the “Forgot Password” link in the “Login” area to reset your password.,account management
-206,User wants Delete Account,"In order to ensure that the sender of this request is the account holder we request that the account holder login to their account and delete their account in the ""My Account"" section. To delete your account please navigate to the ""My Account"" area and choose ""delete my account"". If you have any further questions please let us know.",account management
-210,User wants to change account email,"To change your email please navigate to the ""My Account"" area and click on ""change email address"". If you have any further questions please let us know.",account management
-264,Change payment method (Check if they pay via Segpay),"If you paid using Segpay, Please navigate to our processors consumer portal here: https://cs.segpay.com/",account management
-280,Subsciption is Cancelled,Your current subscription has been cancelled and you will not be billed anymore. ,account management
-290,Pricing,"For information about pricing and our pricing plans please press the ""upgrade"" button in the menu to see all plans available.",account management
-304,iTunes Account Cancellation:,If you signed up through iTunes. You can cancel your subscription through your settings. Here are the instructions: https://support.apple.com/en-us/HT202039,account management
-306,How to change state filter,Apologies but there is no way to adjust someone's state. We currently only offer country selection in the chat.  ,account management
-310,What is the name of your other website for adults that don't mind nudity,We are not able to recommend any other sites. We apologize for the inconvenience. ,account management
-312, How to turn on and off translator,To change this setting please navigate to the settings icon and you will be able to adjust it there.,account management
-330,Swipe Feature,The beauty of [brand] lies in its simplicity. You can connect to a partner via video chat in just a couple of clicks. You also have the option to make a new connection just by clicking on the “Next” button and you will connect with a new partner.,account management
-424,crypto Cancellation,"There is nothing to cancel since the membership does not renew automatically when paying with crypto. 
-When the term of your membership expires you can renew it manually by upgrading again. We currently do not offer subscriptions for crypto payments. ",account management
-254,General Settings Change,To change this setting please navigate to the settings icon and you will be able to adjust it there. ,feature
-294,Google Play Account Cancellation,If you signed up through Google Play. You can cancel your subscription through your Google. Here are the instructions: https://support.google.com/googleplay/answer/7018481?co=GENIE.Platform%3DAndroid&hl=en,subscription
-318,Nobody appear on cam I click start and the hearth is flashing but nothing happen:,I will have to escalate this to our tech team to see why this is happening. Thank you for reporting this bug,technical support
-332,How can I use the private chat function? ,"You can use ""start private chat"" button to start a private chat. ",feature
-334,Users complaining/reporting IA or Nudity,"We do not tolerate any illegal activity on our platform and promptly ban any reported users that violate our AUP and report such cases to law enforcement. We ask our users to help us by reporting such instances so we can promptly remove and ban such users from our platform. If you believe that you were banned by mistake, you can appeal the decision in most cases if this option is available on the ban dialog. ",feature
-336,Want/Can't connect to a Specific Country,If a country is not showing that means there are not enough users online at the moment to connect with in that country.,technical support
-228,No Refund Due,As stated in our terms: Payments are nonrefundable,payment
-216,User was banned for underage,"You have been banned for being underage, If you believe that you were banned by mistake, you can appeal the decision in most cases if this option is available on the ban dialog. ",policy
-352,Users Asking if the will get Banned on Public ,We cannot advise users on personal actions. Please refer to our acceptable use policy for details.,policy
-326,For how long are the materials(personal and sensitive data) saved on your website?:,For this information if you can please refer to our privacy policy it has all the information regarding personal data collection and storage.,security
+id,question,answer
+200,User cant login or forgot password,Please use the “Forgot Password” link in the “Login” area to reset your password.
+206,User wants Delete Account,"In order to ensure that the sender of this request is the account holder we request that the account holder login to their account and delete their account in the ""My Account"" section. To delete your account please navigate to the ""My Account"" area and choose ""delete my account"". If you have any further questions please let us know."
+210,User wants to change account email,"To change your email please navigate to the ""My Account"" area and click on ""change email address"". If you have any further questions please let us know."
+264,Change payment method (Check if they pay via Segpay),"If you paid using Segpay, Please navigate to our processors consumer portal here: https://cs.segpay.com/"
+280,Subsciption is Cancelled,Your current subscription has been cancelled and you will not be billed anymore.
+290,Pricing,"For information about pricing and our pricing plans please press the ""upgrade"" button in the menu to see all plans available."
+304,iTunes Account Cancellation:,If you signed up through iTunes. You can cancel your subscription through your settings. Here are the instructions: https://support.apple.com/en-us/HT202039
+306,How to change state filter,Apologies but there is no way to adjust someone's state. We currently only offer country selection in the chat.
+310,What is the name of your other website for adults that don't mind nudity,We are not able to recommend any other sites. We apologize for the inconvenience.
+312, How to turn on and off translator,To change this setting please navigate to the settings icon and you will be able to adjust it there.
+330,Swipe Feature,The beauty of [brand] lies in its simplicity. You can connect to a partner via video chat in just a couple of clicks. You also have the option to make a new connection just by clicking on the “Next” button and you will connect with a new partner.
+424,crypto Cancellation,"There is nothing to cancel since the membership does not renew automatically when paying with crypto.
+When the term of your membership expires you can renew it manually by upgrading again. We currently do not offer subscriptions for crypto payments. "
+254,General Settings Change,To change this setting please navigate to the settings icon and you will be able to adjust it there.
+294,Google Play Account Cancellation,If you signed up through Google Play. You can cancel your subscription through your Google. Here are the instructions: https://support.google.com/googleplay/answer/7018481?co=GENIE.Platform%3DAndroid&hl=en
+318,Nobody appear on cam I click start and the hearth is flashing but nothing happen:,"I'm sorry to hear you are experiencing this issue. Kindly reset your browser, clear cache, cookies and restart."
+332,How can I use the private chat function? ,"You can use ""start private chat"" button to start a private chat. "
+334,Users complaining/reporting IA or Nudity,"We do not tolerate any illegal activity on our platform and promptly ban any reported users that violate our AUP and report such cases to law enforcement. We ask our users to help us by reporting such instances so we can promptly remove and ban such users from our platform. If you believe that you were banned by mistake, you can appeal the decision in most cases if this option is available on the ban dialog. "
+336,Want/Can't connect to a Specific Country,If a country is not showing that means there are not enough users online at the moment to connect with in that country.
+228,No Refund Due,As stated in our terms: Payments are nonrefundable
+216,User was banned for underage,"You have been banned for being underage, If you believe that you were banned by mistake, you can appeal the decision in most cases if this option is available on the ban dialog. "
+352,Users Asking if the will get Banned on Public ,We cannot advise users on personal actions. Please refer to our acceptable use policy for details.
+326,For how long are the materials(personal and sensitive data) saved on your website?:,For this information if you can please refer to our privacy policy it has all the information regarding personal data collection and storage.
 242,Can't Hear Other People Complaint,"This can happen for various reasons:
 1. Your sound settings may need adjustment.  You can do a sound test here: https://www.onlinemictest.com/sound-test/
 2. The other person has their mic disabled.
-If you still encounter issues with sound we can escalate this to our tech team.""",subscription
-282,Billing Support Escalation,"We will need to have our Billing Support Team check on this issue, could you fill this form https://www.google.com/forms/about/, and we will get back to you via email as soon as we have an update. ",subscription
-150,Cant log into account,Thank you for contacting us. We would love to help you solve the problem you’re having. Have you tried resetting your password? Most of the time that should resolve the problem. ,technical support
-232,Gender Filter,If you would like to chat with a specific gender only you can use the gender filter on the chat.,technical support
+If issue still persist, please reset your browser, clear cache, cookies and restart. "
+282,Billing Support Escalation,We will need to have our Billing Support Team check on this issue
+150,Cant log into account,Thank you for contacting us. We would love to help you solve the problem you’re having. Have you tried resetting your password? Most of the time that should resolve the problem.
+232,Gender Filter,If you would like to chat with a specific gender only you can use the gender filter on the chat.
 244,Webcam Issues,"This can happen for various reasons:
 1. Your denied permission for webcam on our site
 2. Your webcam is not working with browser. For this please do a webcam test to find the issue: https://www.onlinemictest.com/webcam-test/
-If you still encounter issues with your webcam we can escalate this to our tech team.""",technical support
-246,How to change the Auto Message Settings,To change this setting please navigate to the settings icon and you will be able to adjust your intro message setting there. ,technical support
-252,Back Button Feature,The way the back button feature works is it can only be used once per connection.,technical support
-288,I want a Refund,As stated in our terms: Payments are nonrefundable,payment
-308,Cancel my membership,"Here are the instructions to easily cancel your membership. 
-To cancel your membership please log into your account area. Then under your membership status click the “Details” button and then the “Cancel Membership” button.",technical support
-309,"I'm Without email access, Can't Cancel ; No Cancellation Button;","Thank you for reaching out to us! When you fill out the cancelation form an email is sent to the billing email on file.  Since you did not receive this email I will provide you with the link to our payment processor, they have a self serve system to cancel and 24/7 live support online and by phone.  Here is the link: https://cs.segpay.com/",technical support
-324,Some users threaten to spread my data (Extortion),We advise users to never give out their personal information when talking to strangers online.  We are not able to do anything on our end as we do not have partner logs of who you connected with.,technical support
-342,Male User Pretending Female Complaint,Please flag any user that you encounter that is setting themselves as female when they're not. We greatly appreciate you reporting this.,technical support
-999,Can you please help me to remove block?,"I'm sorry, but based on the context provided, it seems that your account was blocked for violating the Acceptable Use Policy of our website. If you believe that you were banned by mistake, you can appeal the decision in most cases if this option is available on the ban dialog. ",technical support
-999,I am not pairing with anyone,"Usually this problem occurs when filters are selected. Please try removing interest tags and country filters and try again, this usually fixes the issue of not being able to connect to female partners. If it does not resolve I will have to escalate this to find out why you are having this issue.",technical support
-999,what is my purchase id,You can find your purchase ID in your email when you completed the purchase. We are not able to give out purchase IDs,technical support
+If issue still persist, please reset your browser, clear cache, cookies and restart."
+246,How to change the Auto Message Settings,To change this setting please navigate to the settings icon and you will be able to adjust your intro message setting there.
+252,Back Button Feature,The way the back button feature works is it can only be used once per connection.
+288,I want a Refund,As stated in our terms: Payments are nonrefundable
+308,Cancel my membership,"Here are the instructions to easily cancel your membership.
+To cancel your membership please log into your account area. Then under your membership status click the “Details” button and then the “Cancel Membership” button."
+309,"I'm Without email access, Can't Cancel ; No Cancellation Button;","Thank you for reaching out to us! When you fill out the cancelation form an email is sent to the billing email on file.  Since you did not receive this email I will provide you with the link to our payment processor, they have a self serve system to cancel and 24/7 live support online and by phone.  Here is the link: https://cs.segpay.com/"
+324,Some users threaten to spread my data (Extortion),We advise users to never give out their personal information when talking to strangers online.  We are not able to do anything on our end as we do not have partner logs of who you connected with.
+342,Male User Pretending Female Complaint,Please flag any user that you encounter that is setting themselves as female when they're not. We greatly appreciate you reporting this.
+999,Can you please help me to remove block?,"I'm sorry, but based on the context provided, it seems that your account was blocked for violating the Acceptable Use Policy of our website. If you believe that you were banned by mistake, you can appeal the decision in most cases if this option is available on the ban dialog. "
+999,I am not pairing with anyone,"Usually this problem occurs when filters are selected. Please try removing interest tags and country filters and try again, this usually fixes the issue of not being able to connect to female partners. "
+999,what is my purchase id,You can find your purchase ID in your email when you completed the purchase. We are not able to give out purchase IDs

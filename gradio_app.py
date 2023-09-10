@@ -4,6 +4,9 @@ from qa import QA
 import uvicorn
 from fastapi import FastAPI, Header, HTTPException, status
 import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 
 with gr.Blocks() as demo:
@@ -32,11 +35,11 @@ gradio_app.blocks.config["dev_mode"] = False
 @app.middleware("http")
 async def authenticate(request, call_next):
     auth_header = request.headers.get("Authorization")
-    if auth_header != f"Bearer {os.environ.get('TOKEN')}":
+    if auth_header != f"Bearer {os.getenv('TOKEN')}":
         response = await call_next(request)
         return JSONResponse(content='Invalid authentication token', status_code=status.HTTP_401_UNAUTHORIZED)
     response = await call_next(request)
     return response
 
 app.mount("/", gradio_app)
-uvicorn.run(app, host="0.0.0.0", port=os.environ.get('API_PORT', 8000))
+uvicorn.run(app, host="0.0.0.0", port=os.getenv('API_PORT', 8000))
