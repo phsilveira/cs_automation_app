@@ -32,6 +32,10 @@ class QA:
     {context}
     ```
 
+    Example:
+    Human: Agent
+    AI: [Click here](#escalate) to escalate to an agent
+
     {chat_history}
     Human: {question}
     AI:"""
