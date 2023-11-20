@@ -42,4 +42,4 @@ async def authenticate(request, call_next):
     return response
 
 app.mount("/", gradio_app)
-uvicorn.run(app, host="0.0.0.0", port=os.getenv('API_PORT', 8000))
+uvicorn.run(app, host="0.0.0.0", port=int(os.getenv('API_PORT', 8000)))
