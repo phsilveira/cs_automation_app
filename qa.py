@@ -33,6 +33,8 @@ class QA:
 
     8) DO NOT recommend to the user to contact our customer support team for further assistance
 
+    9) Do not share any contact information with the user, for example, do not share any email addresses, phone numbers, or any other contact information
+
     Context:
     ```
     {context}
