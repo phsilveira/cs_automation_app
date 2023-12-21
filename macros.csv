@@ -4,14 +4,12 @@ id,question,answer
 210,User wants to change account email,"To change your email please navigate to the ""My Account"" area and click on ""change email address"". "
 264,Change payment method (Check if they pay via Segpay),"If you paid using Segpay, Please navigate to our processors consumer portal here: https://cs.segpay.com/"
 290,Pricing,"For information about pricing and our pricing plans please press the ""upgrade"" button in the menu to see all plans available."
-304,iTunes/Apple Account Cancellation:,If you signed up through iTunes/Apple. You can cancel your subscription through your settings. Here are the instructions: https://support.apple.com/en-us/HT202039
 306,How to change state filter,Apologies but there is no way to adjust someone's state. We currently only offer country selection in the chat.
 310,What is the name of your other website for adults that don't mind nudity,We are not able to recommend any other sites. We apologize for the inconvenience.
 312, How to turn on and off translator,To change this setting please navigate to the settings icon and you will be able to adjust it there.
-330,Swipe Feature,The beauty of [brand] lies in its simplicity. You can connect to a partner via video chat in just a couple of clicks. You also have the option to make a new connection just by clicking on the “Next” button and you will connect with a new partner.
+330,Swipe Feature,You can connect to a partner via video chat in just a couple of clicks. You also have the option to make a new connection just by clicking on the “Next” button and you will connect with a new partner.
 424,crypto Cancellation,We currently do not offer subscriptions for crypto payments.
 254,General Settings Change,To change this setting please navigate to the settings icon and you will be able to adjust it there.
-294,Google Play Account Cancellation,If you signed up through Google Play. You can cancel your subscription through your Google. Here are the instructions: https://support.google.com/googleplay/answer/7018481?co=GENIE.Platform%3DAndroid&hl=en
 318,Nobody appear on cam I click start and the hearth is flashing but nothing happen:,"I'm sorry to hear you are experiencing this issue. Kindly reset your browser, clear cache, cookies and restart."
 332,How can I use the private chat function? ,"You can use ""start private chat"" button to start a private chat. "
 334,Users complaining/reporting IA or Nudity,"We do not tolerate any illegal activity on our platform and promptly ban any reported users that violate our AUP and report such cases to law enforcement. We ask our users to help us by reporting such instances so we can promptly remove and ban such users from our platform. If you believe that you were banned by mistake, you can appeal the decision in most cases if this option is available on the ban dialog. "
@@ -29,12 +27,18 @@ id,question,answer
 252,Back Button Feature,The way the back button feature works is it can only be used once per connection.
 288,I want a Refund,As stated in our terms: Payments are nonrefundable
 308,Cancel my membership,Here are the instructions to easily cancel your membership. To cancel your membership please log into your account area. Then under your membership status click the “Details” button and then the “Cancel Membership” button.
-309,"I'm Without email access, Can't Cancel ; No Cancellation Button;","Thank you for reaching out to us! When you fill out the cancelation form an email is sent to the billing email on file.  Since you did not receive this email I will provide you with the link to our payment processor, they have a self serve system to cancel and 24/7 live support online and by phone.  Here is the link: https://cs.segpay.com/"
+309,"User without email access, Can't Cancel ; No Cancellation Button; didnt work the first cancellation instruction","Thank you for reaching out to us! When you fill out the cancelation form an email is sent to the billing email on file.  Since you did not receive this email I will provide you with the link to our payment processor, they have a self serve system to cancel and 24/7 live support online and by phone.  Here is the link: https://cs.segpay.com/"
 324,Some users threaten to spread my data (Extortion),We advise users to never give out their personal information when talking to strangers online.  We are not able to do anything on our end as we do not have partner logs of who you connected with.
 342,Male User Pretending Female Complaint,Please flag any user that you encounter that is setting themselves as female when they're not. We greatly appreciate you reporting this.
 999,Can you please help me to remove block?,"I'm sorry, but based on the context provided, it seems that your account was blocked for violating the Acceptable Use Policy of our website. If you believe that you were banned by mistake, you can appeal the decision in most cases if this option is available on the ban dialog. "
 998,I am not pairing with anyone,"Usually this problem occurs when filters are selected. Please try removing interest tags and country filters and try again, this usually fixes the issue of not being able to connect to female partners. "
 997,I am seeing people from two sites,It is possible to see people from both services/brands if you use both sites.
-996,what is my purchase id,You can find your purchase ID in your email when you completed the purchase. We are not able to give out purchase IDs
+996,what is my purchase id,"To find purchase ID they should check their email, if they still cant find it: Please log to your ""My account"" area and click the transaction tab to get your purchase ID"
 995,I go to segpay and its not finding the record,"If you are really having troubles, Kindly call segpay as they are our payment processor and they will help you cancel your account.;"
-994,Escalete the problem to an human agent,[Click here](#escalate) to escalate to an agent.
+994,Escalete the problem to an human agent; How can I reach customer support service,[Click here](#escalate) to escalate to an agent.
+993,Is my next payment canceled?,"check their subscription status by logging in and navigating to ""my account"" area"
+992,Why do I keep getting skipped? i need help as when i am talking to someone it automatically gets disconnected;,"Each connection continues until one of the chat partners clicks the next button. To have longer conversations make sure to show your face and be in a well lighted room. Saying hello, waving or introducing yourself also helps break the ice."
+991,"Can I still access the VIP features if I cancel my subscription? Paid for a month, but I'm not sure I'll pay another.;",If user cancels their subscription they will have access to VIP features until the end of the current period.
+990,how is the shortcut to skip to next cam?,"To use the ""Next"" button feature with a keyboard shortcut, press 'F9'."""
+989,It came as a pop up like a warning that I have  been flagged,"Thank you for contacting us. If you received a warning that you have been flagged, it could be due to a potential violation of our Acceptable Use Policy."
+988,Does the subscription/membership renew automatically?,The subscription is auto-charged as it is a subscription and the amount and billing period depends on the plan you have subscribed to.

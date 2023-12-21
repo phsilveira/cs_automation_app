@@ -18,6 +18,15 @@ with gr.Blocks() as demo:
     
     def respond(questions, chat_history):
         bot_answer = qa.run_chain(questions, chat_history)
+
+        last_3_messages = [message[1] for message in chat_history[-3:]]
+
+        if len(last_3_messages) > 2:
+            if (last_3_messages[0] == last_3_messages[1] == last_3_messages[2]):
+                bot_answer = "[Click here](#escalate) to escalate to an agent."
+                chat_history.append([questions, bot_answer])
+                return "", chat_history
+
         chat_history.append([questions, bot_answer])
         return "", chat_history
 
