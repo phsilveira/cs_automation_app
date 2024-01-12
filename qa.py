@@ -97,7 +97,7 @@ from the context given to you.
 
         return memory
 
-    def run_chain(self, question: str, history: list = None) -> str:
+    def run_chain(self, question: str, history: list = None, brand: str = None) -> str:
         memory = self.load_history_messages(history)
         chain = load_qa_chain(
             self.llm, chain_type='stuff', prompt=self.prompt, memory=memory, verbose=False
