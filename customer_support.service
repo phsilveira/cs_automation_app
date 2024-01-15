@@ -3,10 +3,10 @@ Description=Start Customer Support service
 
 [Service]
 Type=simple
-ExecStart=/bin/bash /home/ai/customer_support/run.sh
+ExecStart=/bin/bash /home/ai/customer_support/cs_automation_app/run.sh
 User=ai
 Group=ai
-WorkingDirectory=/home/ai/customer_support/
+WorkingDirectory=/home/ai/customer_support/cs_automation_app
 Restart=always
 
 [Install]
