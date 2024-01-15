@@ -18,6 +18,10 @@ cp .env.example .env
 # append the token in the .env file
 echo "$(openssl rand -hex 32)" >> .env
 
+python -m venv venv
+
+pip install -r requirements.dev.txt
+
 python gradio_app.py
 ```
 

@@ -26,7 +26,7 @@ id,question,answer
 246,How to change the Auto Message Settings,To change this setting please navigate to the settings icon and you will be able to adjust your intro message setting there.
 252,Back Button Feature,The way the back button feature works is it can only be used once per connection.
 288,I want a Refund,As stated in our terms: Payments are nonrefundable
-308,Cancel my membership,Here are the instructions to easily cancel your membership. To cancel your membership please log into your account area. Then under your membership status click the “Details” button and then the “Cancel Membership” button.
+308,Cancel my membership,"""Here are the instructions to easily cancel your membership. For security reasons, only users can cancel their subscription. To cancel your membership please log into your account area  To cancel your membership please log into your account area. Then under your membership status click the “Details” button and then the “Cancel Membership” button."""
 309,"User without email access, Can't Cancel ; No Cancellation Button; didnt work the first cancellation instruction","Thank you for reaching out to us! When you fill out the cancelation form an email is sent to the billing email on file.  Since you did not receive this email I will provide you with the link to our payment processor, they have a self serve system to cancel and 24/7 live support online and by phone.  Here is the link: https://cs.segpay.com/"
 324,Some users threaten to spread my data (Extortion),We advise users to never give out their personal information when talking to strangers online.  We are not able to do anything on our end as we do not have partner logs of who you connected with.
 342,Male User Pretending Female Complaint,Please flag any user that you encounter that is setting themselves as female when they're not. We greatly appreciate you reporting this.
@@ -42,3 +42,12 @@ id,question,answer
 990,how is the shortcut to skip to next cam?,"To use the ""Next"" button feature with a keyboard shortcut, press 'F9'."""
 989,It came as a pop up like a warning that I have  been flagged,"Thank you for contacting us. If you received a warning that you have been flagged, it could be due to a potential violation of our Acceptable Use Policy."
 988,Does the subscription/membership renew automatically?,The subscription is auto-charged as it is a subscription and the amount and billing period depends on the plan you have subscribed to.
+987,How can i change my susbscription plan?,"To change your membership plan, please cancel your current subscription and re-subscribe to the membership plan of your choice."
+986,Why do I only getting fake accounts?,"If you would like to connect with a specific gender please use the gender filter option."
+985,Can I add login by email to my account althouygh I signed up with google?,"""You can use the "forgot password" link and create a password. Then you will be able to login with this password or google account."""
+984,Where is the LGBTQ+ filter?,"We do not have an LGBTQ filter however you can use the word as a tag instead to narrow down your search."
+983,Can I change my username?,"At this time there is no usernames therefore there is no option to change it."
+982,How do I get more people?,"If you would like to connect with a specific gender please use the gender filter option."
+981,No women on here after I paid for vip,"If you would like to connect with a specific gender please use the gender filter option."
+980,Why am I getting the same people over and over?,"If you would like to connect with a specific gender please use the gender filter option."
+979,Is my email or profile visible to other users?,"Email addresses are private and not visible to other users."

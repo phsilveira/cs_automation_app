@@ -7,7 +7,6 @@ argilla==1.10.0
 async-timeout==4.0.2
 attrs==23.1.0
 backoff==2.2.1
-backports.zoneinfo==0.2.1
 bcrypt==4.1.2
 blinker==1.6.2
 cachetools==5.3.1
