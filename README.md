@@ -40,6 +40,16 @@ curl 'http://0.0.0.0:8000/run/predict' \
   --compressed
 ```
 
+## setup systemctl
+```sh
+sudo cp /home/ai/customer_support/cs_automation_app/customer_support.service /etc/systemd/system/
+
+$ sudo systemctl enable customer_support.service
+
+$ sudo systemctl start customer_support.service
+done
+```
+
 
 ## API Documentation
 
