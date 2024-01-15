@@ -4,7 +4,7 @@ Streamlit and Gradio App for cs automation using CSV macro as input
 
 Built with ❤️ by [phsilveira](https://github.com/phsilveira)
 
-## Local Gradio Setup Using Docker
+## Local Gradio setup
 ```sh
 # External users: download Files
 git clone git@github.com:phsilveira/cs_automation_app.git
@@ -18,6 +18,11 @@ cp .env.example .env
 # append the token in the .env file
 echo "$(openssl rand -hex 32)" >> .env
 
+python gradio_app.py
+```
+
+## Local Gradio Setup Using Docker
+```sh
 # Start the docker container and build the image
 docker-compose up -d --build
 ```
@@ -27,7 +32,7 @@ docker-compose up -d --build
 curl 'http://0.0.0.0:8000/run/predict' \
   -H 'content-type: application/json' \
   -H 'Authorization: Bearer TOKEN' \
-  --data-raw $'{"data":["hi",[]],"fn_index":1,"session_hash":"6b5waetyyl"}' \
+  --data-raw $'{"data":["hi",[], "flingster"],"fn_index":1,"session_hash":"6b5waetyyl"}' \
   --compressed
 ```
 
@@ -51,7 +56,8 @@ curl 'http://0.0.0.0:8000/run/predict' \
 {
   "data": [
     "hi",
-    []
+    [],
+    "flingster"
   ],
   "fn_index": 1,
   "session_hash": "6b5waetyyl"
@@ -61,6 +67,7 @@ curl 'http://0.0.0.0:8000/run/predict' \
 - `data` (Array):
   - The first element is the input message (String).
   - The second element is an array of history messages (Array of Arrays of Strings).
+  - The third element is the name of the brand (String).
 
 - `fn_index` (Integer):
   - Index of a specific function (Integer).
@@ -103,23 +110,6 @@ curl 'http://0.0.0.0:8000/run/predict' \
 
 Please refer to the API documentation for more detailed information about the endpoint and its functionality.
 
-
-## Local Streamlit Setup
-
-Assumes working python installation and some command line knowledge ([install python with conda guide](https://tech.gerardbentley.com/python/beginner/2022/01/29/install-python.html)).
-
-```sh
-# External users: download Files
-git clone git@github.com:phsilveira/cs_automation_app.git
-
-# Go to correct directory
-cd cs_automation_appq
-
-# Run the streamlit app (will install dependencies in a virtualenvironment in the folder venv)
-make run
-```
-
-Open your browser to [http://localhost:8501/](http://localhost:8501/) if it doesn't open automatically.
 
 ### Local Development
 

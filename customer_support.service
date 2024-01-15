@@ -1,0 +1,13 @@
+[Unit]
+Description=Start Customer Support service
+
+[Service]
+Type=simple
+ExecStart=/bin/bash /home/ai/customer_support/run.sh
+User=ai
+Group=ai
+WorkingDirectory=/home/ai/customer_support/
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

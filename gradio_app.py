@@ -15,6 +15,7 @@ logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s
 
 last_message = {
     "question": "",
+    "created_at": "",
     "answer": "",
     "duration": 0
 }
@@ -46,6 +47,7 @@ with gr.Blocks() as demo:
         last_message["question"] = questions
         last_message["answer"] = bot_answer
         last_message["duration"] = duration
+        last_message["created_at"] = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
 
         return bot_answer, chat_history
 
