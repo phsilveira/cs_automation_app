@@ -57,7 +57,7 @@ from the context given to you.
 
     def __init__(self, csv_path:str = None) -> None:
         self.embedding_function = OpenAIEmbeddings()
-        self.llm = OpenAI(temperature=0)
+        self.llm = OpenAI(temperature=0, model='gpt-4')
 
         if os.path.exists(self.persist_directory):
             self.load_vectorstore_db()
