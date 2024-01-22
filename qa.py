@@ -49,7 +49,7 @@ from the context given to you.
     Human: {question}
     AI:"""
 
-    persist_directory = "./chroma_db"
+    persist_directory = "./chroma_db2"
 
     prompt = PromptTemplate(
         input_variables=["context", "chat_history", "question"], template=template
