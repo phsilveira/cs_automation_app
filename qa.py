@@ -1,6 +1,6 @@
 from langchain.embeddings.openai import OpenAIEmbeddings
 from langchain.vectorstores import Chroma
-from langchain import OpenAI
+from langchain.chat_models import ChatOpenAI
 from langchain.document_loaders import CSVLoader
 from langchain.prompts import PromptTemplate
 from langchain.memory import ConversationBufferMemory
@@ -57,7 +57,7 @@ from the context given to you.
 
     def __init__(self, csv_path:str = None) -> None:
         self.embedding_function = OpenAIEmbeddings()
-        self.llm = OpenAI(temperature=0, model='gpt-4')
+        self.llm = ChatOpenAI(temperature=0, model='gpt-4')
 
         if os.path.exists(self.persist_directory):
             self.load_vectorstore_db()
