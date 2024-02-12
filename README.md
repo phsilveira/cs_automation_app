@@ -10,7 +10,7 @@ Built with ❤️ by [phsilveira](https://github.com/phsilveira)
 git clone git@github.com:phsilveira/cs_automation_app.git
 
 # Go to correct directory
-cd cs_automation_appq
+cd cs_automation_app
 
 # setup .env file
 cp .env.example .env

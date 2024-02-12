@@ -4,6 +4,7 @@ from qa import QA
 import uvicorn
 from fastapi import FastAPI, Header, HTTPException, status
 import os
+import ast
 from dotenv import load_dotenv
 import logging.config
 import time
@@ -24,14 +25,22 @@ with gr.Blocks() as demo:
     chatbot = gr.Chatbot()
     msg = gr.Textbox()
     clear = gr.ClearButton([msg, chatbot])
-    qa = QA('macros.csv')
+    qa = QA('macros.csv', 'websites.csv')
     chat_history = []
     brand = gr.Textbox()
+    payload = gr.Textbox()
 
-    def respond(questions, chat_history, brand):
+    def respond(questions, chat_history, brand, payload):
         start_time = time.time()
+
+        payload_dict = {}
+        if payload is not None:
+            try:
+                payload_dict = ast.literal_eval(payload)
+            except:
+                payload_dict = {}
         
-        bot_answer = qa.run_chain(questions, chat_history, brand)
+        bot_answer = qa.run_chain(questions, chat_history, brand, payload_dict)
         last_3_messages = [message[1] for message in chat_history[-3:]]
 
         if len(last_3_messages) > 2:
@@ -51,13 +60,12 @@ with gr.Blocks() as demo:
         last_message["created_at"] = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
 
         return bot_answer, chat_history
-
+    
     msg.submit(
         respond,
-        inputs=[msg, chatbot, brand],
+        inputs=[msg, chatbot, brand, payload],
         outputs=[msg, chatbot],
     )
-
 
 app = FastAPI()
 gradio_app = gr.routes.App.create_app(demo)
@@ -72,10 +80,12 @@ async def authenticate(request, call_next):
     response = await call_next(request)
     return response
 
+
 @app.get("/health-check")
 async def health_check():
     return last_message
 
 app.mount("/", gradio_app)
+
 LOGGING_CONFIG["formatters"]["default"]["fmt"] = "%(asctime)s [%(name)s] %(levelprefix)s %(message)s"
 uvicorn.run(app, host="0.0.0.0", port=int(os.environ.get('API_PORT', 8501)))
