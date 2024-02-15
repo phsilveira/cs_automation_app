@@ -53,7 +53,7 @@ async def authenticate(request, call_next):
     response = await call_next(request)
     return response
 
-@app.post("/predict")
+@app.post("/run/predict")
 async def respond(payload: RespondPayload):
     questions, chat_history, brand, payload = payload.data
 
