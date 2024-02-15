@@ -59,7 +59,7 @@ System: You are an AI assistant chatbot. You will provide for the user answers b
     Human: {question}
     AI:"""
 
-    persist_directory = "./chroma_db3"
+    persist_directory = "./chroma_db4"
 
     prompt = PromptTemplate(
         input_variables=["context", "chat_history", "question", "user_context"], template=template
@@ -67,7 +67,7 @@ System: You are an AI assistant chatbot. You will provide for the user answers b
 
     def __init__(self, macro_csv_path:str = None, website_csv_path: str = None) -> None:
         self.embedding_function = OpenAIEmbeddings()
-        self.llm = ChatOpenAI(temperature=0, model='gpt-4')
+        self.llm = ChatOpenAI(temperature=0, model='gpt-4', request_timeout=120) #''gpt-3.5-turbo''
 
         if os.path.exists(self.persist_directory):
             self.load_vectorstore_db()
@@ -75,8 +75,6 @@ System: You are an AI assistant chatbot. You will provide for the user answers b
             self.import_to_vectorstore(macro_csv_path, website_csv_path)
         else:
             raise ValueError("Missing 'csv_path'")
-        
-        self.chain = self.create_chain()
 
     def load_vectorstore_db(self) -> None:
         self.db = Chroma(
@@ -149,13 +147,13 @@ System: You are an AI assistant chatbot. You will provide for the user answers b
         """
         return vip_detail + ban_detail
 
-
     def run_chain(self, question: str, history: list = None, brand: str = None, payload: dict = None) -> str:
         memory = self.load_history_messages(history)
+        
         chain = load_qa_chain(
             self.llm, chain_type='stuff', prompt=self.prompt, memory=memory, verbose=False
         )
-
+        
         docs = self.db.similarity_search(question, k=2, filter={'source': 'macros.csv'})
 
         if brand is not None:
@@ -167,16 +165,8 @@ System: You are an AI assistant chatbot. You will provide for the user answers b
         except:
             payload_formatted = ""
 
-        print(payload_formatted)
-
-        return chain.run({"input_documents": docs, "question": question, "user_context": payload_formatted})
-
-    def create_chain(self):
-        self.memory = self.load_history_messages()
-        return load_qa_chain(
-            self.llm, chain_type='stuff', prompt=self.prompt, memory=self.memory, verbose=False
-        )
-
-    def ask(self, question: str) -> str:
-        docs = self.db.similarity_search(question, k=3)
-        return self.chain.run({"input_documents": docs, "question": question})
+        try:
+            return chain.run({"input_documents": docs, "question": question, "user_context": payload_formatted})
+        except Exception as e:
+            print(e)
+            return "I'm sorry, try again later."
