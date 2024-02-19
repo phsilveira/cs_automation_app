@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 import logging.config
 import time
 from uvicorn.config import LOGGING_CONFIG
-from typing import List, Optional
+from typing import Any, List, Optional
 from pydantic import BaseModel
 
 
@@ -44,6 +44,12 @@ class RespondPayload(BaseModel):
     fn_index: int
     session_hash: str
 
+class ResponseModel(BaseModel):
+    data: List[Any]
+    is_generating: bool
+    duration: float
+    average_duration: float
+
 @app.middleware("http")
 async def authenticate(request, call_next):
     auth_header = request.headers.get("Authorization")
@@ -73,7 +79,16 @@ async def respond(payload: RespondPayload):
     last_message["duration"] = duration
     last_message["created_at"] = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
 
-    return bot_answer, chat_history
+    # return ,
+    return {
+        "data": [
+            bot_answer,
+            chat_history
+        ],
+        "is_generating": False,
+        "duration": duration,
+        "average_duration": duration
+    }
 
 @app.get("/health-check")
 async def health_check():
