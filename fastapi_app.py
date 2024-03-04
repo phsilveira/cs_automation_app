@@ -15,7 +15,7 @@ from pydantic import BaseModel
 
 load_dotenv()
 
-logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
+logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.DEBUG)
 
 last_message = {
     "question": "",
@@ -57,6 +57,8 @@ async def authenticate(request, call_next):
 async def respond(payload: RespondPayload):
     questions, chat_history, brand, payload = payload.data
 
+    logging.debug(f"🔔 Payload: {[questions, chat_history, brand, payload]}")
+
     start_time = time.time()
 
     payload_dict = payload
@@ -72,6 +74,8 @@ async def respond(payload: RespondPayload):
     last_message["answer"] = bot_answer
     last_message["duration"] = duration
     last_message["created_at"] = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
+
+    logging.debug(f"Last message: {last_message}")
 
     return bot_answer, chat_history
 
