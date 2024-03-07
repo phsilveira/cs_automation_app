@@ -140,9 +140,14 @@ System: You are an AI assistant chatbot. You will provide for the user answers b
 
         ban_detail = ""
         if payload.get('ban_details'):
+            expires = payload.get('ban_details').get('expires')
+            if int(expires) <= 0:
+                expires = "Never"
+            else:
+                expires = datetime.datetime.fromtimestamp(expires)
             ban_detail = f"""
     ban reason: {payload.get('ban_details').get('reason')}
-    ban expires: {datetime.datetime.fromtimestamp(payload.get('ban_details').get('expires'))}
+    ban expires: {expires}
     can lift the ban?: {payload.get('ban_details').get('can_verify')}
         """
         return vip_detail + ban_detail

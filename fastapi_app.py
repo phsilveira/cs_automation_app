@@ -81,6 +81,8 @@ async def respond(payload: RespondPayload):
     last_message["duration"] = duration
     last_message["created_at"] = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
 
+    logging.debug(f"Last message: {last_message}")
+
     return {
         "data": [
             bot_answer,
@@ -90,10 +92,6 @@ async def respond(payload: RespondPayload):
         "duration": duration,
         "average_duration": duration
     }
-
-    logging.debug(f"Last message: {last_message}")
-
-    return bot_answer, chat_history
 
 
 @app.get("/health-check")
