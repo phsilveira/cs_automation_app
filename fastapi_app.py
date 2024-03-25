@@ -24,6 +24,28 @@ last_message = {
     "duration": 0
 }
 
+keyword_trigger_list = [
+    "File a Complaint",
+    "Lawsuit",
+    "I will contact my Lawyers",
+    "I will contact my Bank",
+    "Call the Police",
+    "File Charges",
+    "Unauthorized charges",
+    "Scammer",
+    "I will sue you",
+    "I will contact Better Business Bureau",
+    "Search Warrant",
+    "Police Investigation",
+    "I will contact the Police Department",
+    "Police Authority",
+    "[Country] Police",
+    "General's Office",
+    "Legal Process",
+    "Law Enforcement",
+    "Criminal Investigation",
+]
+
 qa = QA('macros.csv', 'websites.csv')
 chat_history = []
 
@@ -37,6 +59,11 @@ def get_bot_answer(qa, questions, chat_history, brand, payload_dict):
         if (last_3_messages[0] == last_3_messages[1] == last_3_messages[2]):
             bot_answer = "[Click here](#escalate) to escalate to an agent."
             chat_history.append([questions, bot_answer])
+
+    if any(keyword.lower() in questions.lower() for keyword in keyword_trigger_list):
+        bot_answer = "[Click here](#escalate) to escalate to an agent."
+        chat_history.append([questions, bot_answer])
+
     return bot_answer, chat_history
 
 class RespondPayload(BaseModel):
